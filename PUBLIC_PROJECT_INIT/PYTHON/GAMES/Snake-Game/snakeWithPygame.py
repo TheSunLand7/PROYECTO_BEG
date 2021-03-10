@@ -122,7 +122,7 @@ class Snake():
                 continue
             pygame.draw.rect(screen, PURPLE, [body[0], body[1], 20, 20])
 
-        self.check_error(screen)
+
 
     def check_valid_movement(self, next_mov):
         """Para verificar movimientos válidos"""
@@ -300,12 +300,14 @@ def main():
 
         #-------------TEXTO PARA LA PUNTUACION DEL JUEGO------------->
         block.draw_block(screen)
+
+        #-------------COMIDA Y BLOQUE NO COINCIDEN------------->
         while True:
             if food.food_position in block.block_position:
                 food.random_position()
 
             break
-
+        #-------------COMIDA Y BLOQUE NO COINCIDEN------------->
         food.draw_food(screen)
         pygame.display.update()  # Para actualizar la pantalla al igual que flip()
         # pygame.display.flip()
