@@ -15,7 +15,7 @@ imagen_dim = imagen.subsample(5, 5)
 Label(windows_principal, image=imagen_dim, relief="groove").pack()
 
 
-def menu_principal():
+def main():
 	"""First screen"""
 	# Labels
 	Label(windows_principal, text="ACCESO AL SISTEMA", bg="#004225", fg="#ffffff",
@@ -64,7 +64,7 @@ def log_in():
 	Label(windows_login, text="Contraseña",
 		font=("TerminessTTF Nerd Font", 15, "bold")
 		).place(x=40, y=150)
-	password_entry = Entry(windows_login, font=("TerminessTTF Nerd Font", 15, "bold"), 
+	password_entry = Entry(windows_login, font=("TerminessTTF Nerd Font", 15, "bold"),
 		show="*", textvariable=password_verify)
 	password_entry.place(x=210, y=150, width=180, height=25)
 
@@ -100,34 +100,34 @@ def sign_up():
 		height=2
 		).pack(fill=X)
 
-	# Label and Entries for user, e-mail, password and phone number
-	Label(windows_signup, text="Usuario", 
+	# Labels and Entries for user, e-mail, password and phone number
+	Label(windows_signup, text="Usuario",
 		font=("TerminessTTF Nerd Font", 15, "bold")
 		).place(x=40, y=100)
 	user_sign_entry = Entry(windows_signup, font=("TerminessTTF Nerd Font", 15, "bold"))
 	user_sign_entry.place(x=160, y=100)
 
-	Label(windows_signup, text="e-mail", 
+	Label(windows_signup, text="e-mail",
 		font=("TerminessTTF Nerd Font", 15, "bold")
 		).place(x=40, y=150)
 	email_sign_entry = Entry(windows_signup, font=("TerminessTTF Nerd Font", 15, "bold"))
 	email_sign_entry.place(x=160, y=150)
 
-	Label(windows_signup, text="Contraseña", 
+	Label(windows_signup, text="Contraseña",
 		font=("TerminessTTF Nerd Font", 15, "bold")
 		).place(x=40, y=200)
 	password_sign_entry = Entry(windows_signup, font=("TerminessTTF Nerd Font", 15, "bold"),
 		show="*")
 	password_sign_entry.place(x=160, y=200)
 
-	Label(windows_signup, text="Repita su\n contraseña", 
+	Label(windows_signup, text="Repita su\n contraseña",
 		font=("TerminessTTF Nerd Font", 15, "bold")
 		).place(x=31, y=240)
 	Entry(windows_signup, font=("TerminessTTF Nerd Font", 15, "bold"),
 		show="*"
 		).place(x=160, y=250)
 
-	Label(windows_signup, text="Número de\n teléfono", 
+	Label(windows_signup, text="Número de\n teléfono",
 		font=("TerminessTTF Nerd Font", 15, "bold")
 		).place(x=40, y=300)
 	phone_sign_entry = Entry(windows_signup, font=("TerminessTTF Nerd Font", 15, "bold"))
@@ -153,7 +153,7 @@ def insert_data():
     db="Proyecto1"
     )
 
-	db_cursor = data_base.cursor() # Para ir a l db y buscar info
+	db_cursor = data_base.cursor() # Para ir al db y buscar info
 	sql = f"""INSERT INTO signup (Usuario, Mail, Password, Phonenumber) VALUES (
 			'{user_sign_entry.get()}', '{email_sign_entry.get()}', '{password_sign_entry.get()}',
 			'{phone_sign_entry.get()}'
@@ -189,12 +189,13 @@ def verify_data():
 
 	data_base.close()
 
-menu_principal()
+if __name__ == '__main__':
+	main()
 
-# Cosas que me faltan
+# Cosas que me faltan:
 """
 1. Que el usuario ingrese a la plataforma con su usurio y/o email
 2. Hacer que ingresar contraseña y repetir contrseña coincidan y si no,
    que de un error y que vuelva a intentarlo
-3. Aprender un poco más sobre data base 
+3. Aprender un poco más sobre data base
 """
