@@ -2,6 +2,7 @@
 #include <iostream>  // iostream: input/output stream
 // Para utilizar el tipo de dato string debemos de incluirlo
 #include <string>
+#include <stdlib.h>
 /* 
 Proporciona un alcance a los identificadores (los nombres de tipos, 
 Funciones, variables, etc.) dentro de él.
@@ -16,6 +17,7 @@ using namespace std;
 /*
 int main()
 {
+
 	// Si no incluimos la libreria iostream no podremos utilizar el cout,
 	// al igual que si no utilizamos el namespace std.
 	cout << "Hola, soy nuevo aqui! :')\n";  // cout: character output
@@ -88,11 +90,11 @@ int main()
 	// Este retorna 0, porque el main es de tipo integer.
 	return 0;
 }
-*/
 
+*/
 int main()
 {
-	
+	/*
 	// Operadores de comparacion [<, <=, >, >=, ==, !=] 
 	// El resultado es 1 o 0, donde 1 es true y 0 es false
 	bool test = 'a' == 'A';
@@ -109,6 +111,19 @@ int main()
 	// Se debe colocar en parentesis la comparacion para que la maquina
 	// sepa que queremos comparar esas dos variables.
 	cout << "These numbers are the same?: " << (num1 == num2);
+	*/
+	int number;
+	cout << "Please enter a number: "; cin >> number;
 
+	if (number == 10)
+	{
+		cout << "This is my fav number!" << endl;
+	}else{
+		cout << "This is NOT mt fav number!" << endl << endl;
+	}
+	
+
+	cout << "\n\n\n*--------------------------FIN--------------------------*" << endl;
+	system("pause");
 	return 0;
 }

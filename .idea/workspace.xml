@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7930a033-8bb4-4f4f-83a1-9d3676f7e68d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PROJECT_START.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PROJECT_START.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PUBLIC_PROJECT_INIT/PYTHON/GAMES/Pong-Game/plateBreak.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PUBLIC_PROJECT_INIT/PYTHON/GAMES/Pong-Game/pongGame.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PUBLIC_PROJECT_INIT/C++/runProgram.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PUBLIC_PROJECT_INIT/C++/runProgram.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PUBLIC_PROJECT_INIT/C++/tutorial.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PUBLIC_PROJECT_INIT/C++/tutorial.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PUBLIC_PROJECT_INIT/PYTHON/APPS/Calc/calcWithGrid.py" beforeDir="false" afterPath="$PROJECT_DIR$/PUBLIC_PROJECT_INIT/PYTHON/APPS/Calc/calcWithGrid.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
