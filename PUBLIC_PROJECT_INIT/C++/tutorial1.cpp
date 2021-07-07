@@ -140,7 +140,7 @@ int main() {
 	return 0;
 }*/
 
-/*SET
+//SET
 #include <string>
 #include <set>
 
@@ -168,4 +168,3 @@ int main() {
 	std::cin.get();
 	return 0;
 }
-*/
